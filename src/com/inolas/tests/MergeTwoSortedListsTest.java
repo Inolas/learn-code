@@ -1,4 +1,4 @@
-package test.solutions;
+package com.inolas.tests;
 
 import org.junit.Test;
 
