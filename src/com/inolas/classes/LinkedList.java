@@ -2,6 +2,7 @@ package com.inolas.classes;
 
 public class LinkedList{
     public ListNode head;
+
     public void insert(int data){
         ListNode current = head;
         if(head == null){
@@ -15,12 +16,15 @@ public class LinkedList{
 
     }
     public void prepend(int data){
+
+        ListNode newNode = new ListNode(data);
         ListNode current = head;
         if(head == null){
-            head = new ListNode(data);
+            head = newNode;
         }
         else{
-
+            newNode.next = head;
+            head = newNode;
         }
     }
     public void printList()
