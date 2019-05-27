@@ -3,8 +3,6 @@ package com.inolas.solutions;
 import com.inolas.classes.LinkedList;
 import com.inolas.classes.ListNode;
 
-import java.io.IOException;
-
 public class c2_1_RemoveDups
 {
     public void removeDups(ListNode head)
