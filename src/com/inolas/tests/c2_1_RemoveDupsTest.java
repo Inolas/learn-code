@@ -18,5 +18,11 @@ public class c2_1_RemoveDupsTest
         ListNode ln1 = ll1.returnListNode();
         c2_1_RemoveDups rn = new c2_1_RemoveDups();
         rn.removeDups(ln1);
+
+        LinkedList expextedLL = new LinkedList();
+        expextedLL.insert(1);   expextedLL.insert(3);
+        expextedLL.insert(4);
+        ListNode expectedLN = expextedLL.returnListNode();
+        assertEquals(expectedLN, ln1);
     }
 }
