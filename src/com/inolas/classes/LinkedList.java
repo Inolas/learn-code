@@ -38,9 +38,35 @@ public class LinkedList{
             current = current.next;
         }
     }
+    public String stringList()
+    {
+        String list="";
+        ListNode current = head;
+
+        if(current == null)
+            list = "";
+
+        while (current.next != null)
+        {
+            list += current.data+"->";
+            current = current.next;
+        }
+        list += current.data;
+
+        return list;
+    }
 
     public ListNode returnListNode()
     {
         return head;
+    }
+
+    public ListNode returnEndNode()
+    {
+        ListNode current = head;
+        while(current.next != null){
+            current = current.next;
+        }
+        return current;
     }
 }

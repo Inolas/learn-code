@@ -12,16 +12,14 @@ public class c2_2_ReturnKthToLastTest
     @Test
     public void test1(){
         LinkedList ll = new LinkedList();
-        ll.insert(1);
-        ll.insert(2);
-        ll.insert(3);
-        ll.insert(4);
+        ll.insert(1);       ll.insert(2);
+        ll.insert(3);       ll.insert(4);
         ll.insert(5);
         ListNode ln1 = ll.returnListNode();
 
-        int returnedInt = printKthToLast(ln1, 4);
+        int actualInt = printKthToLast(ln1, 4);
 
-        assertEquals(2, returnedInt);
+        assertEquals(2, actualInt);
     }
 
     @Test
