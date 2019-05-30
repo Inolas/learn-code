@@ -4,86 +4,74 @@ import com.inolas.classes.ListNode;
 
 public class mergeSort
 {
-    int[] mergeSort(int[] array){
+    public void mergeSort(int[] array, int left, int right){
 
-        return null;
+        int mid = (left + right) / 2;
+
+        if(left < right)
+        {
+            mergeSort(array, left, mid);
+            mergeSort(array, mid + 1, right);
+            merge(array, left, mid, right);
+
+        }
     }
     ListNode mergeSort(ListNode head){
 
         return null;
     }
-    public static void merge(){
+    public void merge(int[] array, int left, int mid, int right){
+        System.out.println(this.printArray(array));
 
-    }
-
-
-    static void merge(int arr[], int l, int m, int r)
-    {
-
-        int n1 = m - l + 1;
-        int n2 = r - m;
-
-        int L[] = new int [n1];
-        int R[] = new int [n2];
-
-        for (int i=0; i<n1; ++i)
-            L[i] = arr[l + i];
-        for (int j=0; j<n2; ++j)
-            R[j] = arr[m + 1+ j];
-
-        int i = 0, j = 0;
-
-        int k = l;
-        while (i < n1 && j < n2)
+        int[] leftArray = new int[mid - left + 1];
+        for (int i = 0; i < mid - left + 1; i++)
         {
-            if (L[i] <= R[j])
+            leftArray[i] = array[left+i];
+        }
+        int[] rightArray = new int[right - mid];
+        for (int i = 0; i < right - mid; i++)
+        {
+            rightArray[i] = array[mid+1+i];
+        }
+        int i=0, j=0;
+        int k = left;
+
+        while(i < (left - mid + 1) && j < (right - mid))
+        {
+            if(leftArray[i] < rightArray[j])
             {
-                arr[k] = L[i];
+                array[k] = leftArray[i];
                 i++;
             }
             else
             {
-                arr[k] = R[j];
+                array[k] = rightArray[j];
                 j++;
             }
             k++;
         }
-
-        while (i < n1)
+        while (i < (mid - left + 1))
         {
-            arr[k] = L[i];
+            array[k] = leftArray[i];
             i++;
             k++;
         }
 
-        while (j < n2)
+        while (j < (right - mid))
         {
-            arr[k] = R[j];
+            array[k] = rightArray[j];
             j++;
             k++;
         }
     }
 
-    public static void sort(int arr[], int l, int r)
+    public String printArray(int[] array)
     {
-        if (l < r)
-        {
-
-            int m = (l+r)/2;
-            sort(arr, l, m);
-            sort(arr , m+1, r);
-
-            merge(arr, l, m, r);
-        }
-    }
-
-    static void printArray(int arr[])
-    {
-        int n = arr.length;
+        String strArray="";
+        int n = array.length;
         for (int i=0; i<n; ++i)
-            System.out.print(arr[i] + " ");
-        System.out.println();
+            strArray += array[i] + " ";
+        return strArray;
     }
-
 }
 
