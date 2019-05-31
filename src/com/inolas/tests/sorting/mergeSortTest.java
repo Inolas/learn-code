@@ -1,5 +1,7 @@
 package com.inolas.tests.sorting;
 
+import com.inolas.classes.LinkedList;
+import com.inolas.classes.ListNode;
 import com.inolas.solutions.sorting.mergeSort;
 import org.junit.Test;
 
@@ -21,6 +23,17 @@ public class mergeSortTest
     @Test
     // Linked List Merge Sort
     public void test2(){
+        LinkedList ll = new LinkedList();
+        ll.insert(11);       ll.insert(12);
+        ll.insert(3);        ll.insert(1);
+        ll.insert(5);        ll.insert(7);
+
+        mergeSort merge = new mergeSort();
+        ListNode ln = ll.returnListNode();
+
+        ListNode actualOutput = merge.mergeSort(ln);
+
+        actualOutput.printList();
 
     }
 }
