@@ -8,20 +8,15 @@ public class c1_1_IsUnique
         int flag = 0;
         HashSet<String> hs = new HashSet<String>();
         for(char s : str.toCharArray()){
+            s = Character.toLowerCase(s);
             if(hs.contains(Character.toString(s))){
                 flag = 1;
+                return false;
             }else {
                 hs.add(Character.toString(s));
             }
         }
 
         return flag == 0? true : false;
-    }
-
-    public static void main(String[] args)
-    {
-        System.out.println(unique("Saloni"));
-        System.out.println(unique("Rachana"));
-
     }
 }
