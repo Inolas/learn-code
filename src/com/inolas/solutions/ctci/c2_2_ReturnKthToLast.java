@@ -1,4 +1,4 @@
-package com.inolas.solutions;
+package com.inolas.solutions.ctci;
 
 import com.inolas.classes.ListNode;
 

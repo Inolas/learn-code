@@ -1,6 +1,6 @@
-package com.inolas.tests;
+package com.inolas.tests.ctci;
 
-import com.inolas.solutions.c1_1_IsUnique;
+import com.inolas.solutions.ctci.c1_1_IsUnique;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

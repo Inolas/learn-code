@@ -1,7 +1,7 @@
-package com.inolas.tests;
+package com.inolas.tests.ctci;
 
 import com.inolas.classes.*;
-import com.inolas.solutions.c2_1_RemoveDups;
+import com.inolas.solutions.ctci.c2_1_RemoveDups;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

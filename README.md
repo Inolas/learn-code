@@ -1,13 +1,19 @@
 # learn-code
 Dropbox for my practice codes
+# Topics started/completed
 
-#List of Topics
-Data Structures: 
-Array,  
+Arrays and Strings
+LinkedList
+Merge Sort, Quick Sort
+
+
+# List of Topics
+Data Structures:
+Array,
 ArrayList,
 StringBuilder,
 Linked List,            Recursive -   Iterative -
-Stack, 
+Stack,
 Queues,
 Heap,
 Hash Table,
@@ -18,8 +24,8 @@ B-Tree,
 Tries/Suffix Tree
 
 
-Algorithms: 
-Sorting 
+Algorithms:
+Sorting
 Bubble Sort,
 Insertion Sort,
 Selection Sort,
@@ -28,10 +34,10 @@ Quick Sort,
 Merge Sort,
 D- two sorted lists; result list also sorted
 S- two ways to approach; recursion and using while loop
-Q-which one is divide and conquer from the above 2 
+Q-which one is divide and conquer from the above 2
 External Sorting,
 Searching (linear and logarithmic time searching),
-Graph Theory 
+Graph Theory
 Adjacency List,
 Adjacent Matrix,
 DFS,
@@ -44,17 +50,17 @@ Divide and Conquer.
 Design Patterns:
 
 
-Adhoc Algorithms: 
-Select Algorithm, 
-Fisher Yates Card Shuffle, 
+Adhoc Algorithms:
+Select Algorithm,
+Fisher Yates Card Shuffle,
 Reservoir Sampling and list is endless.
 
 
-Databases: 
+Databases:
 SQL Queries
 
 
 
 
 
-Linked List and trees: http://cslibrary.stanford.edu/103/ 
+Linked List and trees: http://cslibrary.stanford.edu/103/

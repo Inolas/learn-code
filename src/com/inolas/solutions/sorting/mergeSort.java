@@ -58,15 +58,13 @@ public class mergeSort
         while (i < nL)
         {
             array[k] = leftArray[i];
-            i++;
-            k++;
+            i++;        k++;
         }
 
         while (j < nR)
         {
             array[k] = rightArray[j];
-            j++;
-            k++;
+            j++;        k++;
         }
     }
 
