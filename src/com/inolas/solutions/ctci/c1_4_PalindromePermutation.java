@@ -9,7 +9,7 @@ public class c1_4_PalindromePermutation
         int oddCount = 0;
         char[] inputArray = input.toCharArray();
         HashMap<Character, Integer> wordCount = new HashMap<Character, Integer>();
-        for (char i : inputArray)
+        for (char i: inputArray)
         {
             i = Character.toLowerCase(i);
             if (i != ' ')

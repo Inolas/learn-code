@@ -1,4 +1,4 @@
-package com.inolas.solutions;
+package com.inolas.solutions.ctci;
 import java.util.HashSet;
 
 public class c1_1_IsUnique

@@ -1,6 +1,6 @@
-package com.inolas.tests;
+package com.inolas.tests.ctci;
 
-import static com.inolas.solutions.c2_2_ReturnKthToLast.*;
+import static com.inolas.solutions.ctci.c2_2_ReturnKthToLast.*;
 import static org.junit.Assert.*;
 
 import com.inolas.classes.LinkedList;
