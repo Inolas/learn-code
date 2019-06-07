@@ -1,5 +1,4 @@
 package com.inolas.solutions;
-
 import java.util.HashSet;
 
 public class c1_1_IsUnique
@@ -16,7 +15,6 @@ public class c1_1_IsUnique
                 hs.add(Character.toString(s));
             }
         }
-
         return flag == 0? true : false;
     }
 }
