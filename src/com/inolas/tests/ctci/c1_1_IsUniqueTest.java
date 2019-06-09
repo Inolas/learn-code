@@ -4,7 +4,10 @@ import com.inolas.solutions.ctci.c1_1_IsUnique;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
-
+/*
+ * Assumptions -
+ * TestCases -
+ * */
 public class c1_1_IsUniqueTest
 {
     c1_1_IsUnique uniqueStr = new c1_1_IsUnique();

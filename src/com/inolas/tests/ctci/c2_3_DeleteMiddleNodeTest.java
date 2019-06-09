@@ -4,9 +4,12 @@ import com.inolas.classes.LinkedList;
 import com.inolas.classes.ListNode;
 import com.inolas.solutions.ctci.c2_3_DeleteMiddleNode;
 import org.junit.Test;
-
 import static org.junit.Assert.*;
 
+/*
+ * Assumptions -
+ * Test Cases -
+ * */
 public class c2_3_DeleteMiddleNodeTest
 {
     @Test
