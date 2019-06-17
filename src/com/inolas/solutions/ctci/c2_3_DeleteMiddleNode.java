@@ -15,6 +15,7 @@ public class c2_3_DeleteMiddleNode
             node.data = node.next.data;
             node.next = node.next.next;
         }
+
     }
 
     public static void main(String[] args)
@@ -26,7 +27,7 @@ public class c2_3_DeleteMiddleNode
 
         ListNode ln1 = ll.returnListNode();
 
-        deleteNode(ln1.next.next);
+        deleteNode(ln1.next.next.next);
 
         ln1.printList();
 

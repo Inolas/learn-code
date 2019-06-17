@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class MergeTwoSortedListsTest
+public class _21_MergeTwoSortedListsTest
 {
     @Test
     public void test1(){

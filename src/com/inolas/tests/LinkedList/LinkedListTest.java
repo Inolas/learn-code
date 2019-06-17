@@ -31,5 +31,19 @@ public class LinkedListTest
 
         assertEquals(expectedStr,actualStr);
     }
+    @Test
+    public void lengthList(){
+        LinkedList ll = new LinkedList();
+        ll.insert(1);       ll.insert(2);
+        ll.insert(3);       ll.insert(4);
+        ll.insert(5);
+
+        ListNode ln = ll.returnListNode();
+
+        int expected = 5;
+        int actual = ln.lengthList();
+
+        assertEquals(expected,actual);
+    }
 
 }

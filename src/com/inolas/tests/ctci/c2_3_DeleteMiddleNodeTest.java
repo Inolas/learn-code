@@ -12,6 +12,7 @@ import static org.junit.Assert.*;
  * */
 public class c2_3_DeleteMiddleNodeTest
 {
+    /*Delete 3*/
     @Test
     public void test1(){
         c2_3_DeleteMiddleNode dn = new c2_3_DeleteMiddleNode();
@@ -33,6 +34,7 @@ public class c2_3_DeleteMiddleNodeTest
 
         assertEquals(1, 1);
     }
+    /*Delete 1*/
     @Test
     public void test2(){
         c2_3_DeleteMiddleNode dn = new c2_3_DeleteMiddleNode();
@@ -61,7 +63,7 @@ public class c2_3_DeleteMiddleNodeTest
 
         ListNode ln1 = ll.returnEndNode();
 
-        dn.deleteNode(ln1);
+        dn.deleteNode(ln1.next);
 
         LinkedList expectedO = new LinkedList();
         expectedO.insert(1);       expectedO.insert(2);
