@@ -1,11 +1,9 @@
-package com.inolas.tests;
+package com.inolas.tests.leetcode;
 
 import com.inolas.classes.LinkedList;
 import com.inolas.classes.ListNode;
-import com.inolas.solutions._19_RemoveNthNodeFromEndofList;
+import com.inolas.solutions.leetcode._19_RemoveNthNodeFromEndofList;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class _19_RemoveNthNodeFromEndofListTest
 {

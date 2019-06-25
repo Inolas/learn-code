@@ -1,5 +1,4 @@
-package com.inolas.tests;
-
+package com.inolas.tests.leetcode;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

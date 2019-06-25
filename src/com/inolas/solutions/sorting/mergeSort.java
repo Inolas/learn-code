@@ -13,8 +13,12 @@ public class mergeSort
 
         if (left < right)
         {
+            System.out.println("mid-"+mid+"::left-"+left+"::1mergesort");
             mergeSort(array, left, mid);
+
+            System.out.println("mid-"+mid+"::right-"+right+"::2mergesort");
             mergeSort(array, mid + 1, right);
+
             merge(array, left, mid, right);
 
         }
@@ -84,16 +88,19 @@ public class mergeSort
         }
         ListNode sortedList = new ListNode(0);
         ListNode end = head, mid = head, left = head;
-
+//when there only or no element
         if(end != null || end.next != null)
         {
             mid = head;
             left = head;
             end = head.next.next;
         }
+
+//        left = head se mid tal
+//        mid se end
         while (end != null)
         {
-            mid = mid.next;
+            mid = mid.next;     //slow
             left.next = head.next;
             end = end.next.next;
         }

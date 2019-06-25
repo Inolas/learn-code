@@ -1,5 +1,5 @@
 // This is not merge // This is LinkedList
-package com.inolas.solutions;
+package com.inolas.solutions.leetcode;
 
 import com.inolas.classes.LinkedList;
 import com.inolas.classes.ListNode;

@@ -1,8 +1,8 @@
-package com.inolas.tests;
+package com.inolas.tests.leetcode;
 
 import com.inolas.classes.LinkedList;
 import com.inolas.classes.ListNode;
-import com.inolas.solutions._206_ReverseLinkedList;
+import com.inolas.solutions.leetcode._206_ReverseLinkedList;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

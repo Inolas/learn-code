@@ -1,4 +1,4 @@
-package com.inolas.solutions;
+package com.inolas.solutions.leetcode;
 
 import com.inolas.classes.ListNode;
 

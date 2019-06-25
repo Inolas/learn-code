@@ -4,6 +4,15 @@ import java.util.HashMap;
 
 public class _13_RomanToInteger
 {
+    /*--------------------------------------------------------
+    * Improve code
+    * --------------------------------------------------------
+    * romanToInt(String s) - bad runtime; memory bad;
+    * Runtime: 7 ms, faster than 47.05%;
+    * Memory Usage: 38.6 MB, less than 39.80%
+    * uses hashMap
+    * --------------------------------------------------------
+    * */
     public int romanToInt(String s) {
 
         HashMap<Character, Integer> hmRoman = new HashMap<Character, Integer>();
