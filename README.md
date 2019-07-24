@@ -1,5 +1,8 @@
 # learn-code
 Dropbox for my practice codes
+File names with prefix '$' needs to be worked on or have some Follow-up questions
+
+
 # Topics started/completed
 
 Arrays and Strings

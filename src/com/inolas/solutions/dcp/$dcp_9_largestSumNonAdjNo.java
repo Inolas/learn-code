@@ -3,7 +3,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
 
-public class dcp_9_largestSumNonAdjNo
+public class $dcp_9_largestSumNonAdjNo
 {
     /*
     * Given a list of integers, write a function that returns the largest sum
@@ -14,32 +14,33 @@ public class dcp_9_largestSumNonAdjNo
     * */
     public static int largestSum(int[] array)
     {
-        int maxSum = 0;
-        int skip = 2;
         HashSet<Integer> sum = new HashSet<Integer>();
+        int skip = 2;
+
         while (skip < array.length){
             for (int i = 0; i < array.length; i++)
             {
                 int subSetSum = array[i];
                 for (int j = i + skip; j < array.length; j += skip)
                 {
-                    sum.add(subSetSum);
                     subSetSum += array[j];
+                    sum.add(subSetSum);
                 }
-                sum.add(subSetSum);
             }
             skip++;
         }
-        Iterator<Integer> it = sum.iterator();
-        int max = -999999;
-        while (it.hasNext()){
-            int number = it.next();
+
+        Iterator<Integer> itr = sum.iterator();
+        int max = Integer.MIN_VALUE;
+        while (itr.hasNext()){
+            int number = itr.next();
 //            System.out.print(number+"|");
             if(number > max)
                 max = number;
         }
         System.out.println(max);
-        return maxSum;
+
+        return max;
     }
     /*
      * skip, keep incrementing skip; condition array size - skip - 1 == index break
@@ -52,5 +53,7 @@ public class dcp_9_largestSumNonAdjNo
         largestSum(new int[]{5, 1, 1, 5});
         largestSum(new int[]{1, -4, -9});
         largestSum(new int[]{2, 4, 6, 2, -1});
+        largestSum(new int[]{3, 8, 9, 4, 5, 6});
+
     }
 }

@@ -1,9 +1,6 @@
 package com.inolas.solutions.ctci;
-
 import com.inolas.classes.LinkedList;
 import com.inolas.classes.ListNode;
-
-import static org.junit.Assert.assertSame;
 
 public class c2_3_DeleteMiddleNode
 {
