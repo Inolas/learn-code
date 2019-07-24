@@ -21,7 +21,6 @@ public class dcp_9_largestSumNonAdjNo
             for (int i = 0; i < array.length; i++)
             {
                 int subSetSum = array[i];
-                //System.out.print(array[i]+"|");
                 for (int j = i + skip; j < array.length; j += skip)
                 {
                     sum.add(subSetSum);
