@@ -21,10 +21,11 @@ public class dcp_9_largestSumNonAdjNo
             for (int i = 0; i < array.length; i++)
             {
                 int subSetSum = array[i];
+                //System.out.print(array[i]+"|");
                 for (int j = i + skip; j < array.length; j += skip)
                 {
+                    sum.add(subSetSum);
                     subSetSum += array[j];
-
                 }
                 sum.add(subSetSum);
             }
@@ -34,6 +35,7 @@ public class dcp_9_largestSumNonAdjNo
         int max = -999999;
         while (it.hasNext()){
             int number = it.next();
+//            System.out.print(number+"|");
             if(number > max)
                 max = number;
         }
@@ -49,5 +51,7 @@ public class dcp_9_largestSumNonAdjNo
     {
         largestSum(new int[]{2, 4, 6, 2, 5});
         largestSum(new int[]{5, 1, 1, 5});
+        largestSum(new int[]{1, -4, -9});
+        largestSum(new int[]{2, 4, 6, 2, -1});
     }
 }
