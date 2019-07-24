@@ -1,22 +1,36 @@
 package com.inolas.solutions.ctci;
-
 import java.util.HashMap;
 
 public class c1_6_StringCompression
 {
-    public String compress(String str)
+    public static String compress(String str)
     {
-        char prev = ' ';
-        for (char s :
-                str.toCharArray())
+        int counter = 1;
+        StringBuilder outputString = new StringBuilder();
+        char prevChar = ' ';
+        for (char s : str.toCharArray())
         {
-            if(prev == s){
-
+            counter++;
+            if(prevChar != s || prevChar != ' '){
+                outputString.append(prevChar);
+//                if(counter!=1)
+                outputString.append(counter);
+                counter = 1;
             }
-
-            prev = s;
-
+            prevChar = s;
         }
-        return str;
+        outputString.append(prevChar);
+//        if(counter!=1)
+            outputString.append(counter);
+        return outputString.toString();
+    }
+
+    public static void main(String[] args)
+    {
+        System.out.println(compress("aabbcc"));
+        System.out.println(compress("abc"));
+        System.out.println(compress("aaabbacc"));
+        System.out.println(compress("aabcccccaaa"));
+
     }
 }
