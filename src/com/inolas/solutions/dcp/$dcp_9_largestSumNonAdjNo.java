@@ -29,12 +29,11 @@ public class $dcp_9_largestSumNonAdjNo
             }
             skip++;
         }
-
         Iterator<Integer> itr = sum.iterator();
         int max = Integer.MIN_VALUE;
         while (itr.hasNext()){
             int number = itr.next();
-//            System.out.print(number+"|");
+            System.out.print(number+"|");
             if(number > max)
                 max = number;
         }
