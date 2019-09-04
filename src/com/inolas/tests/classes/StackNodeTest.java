@@ -1,8 +1,6 @@
-package com.inolas.tests.Stack;
+package com.inolas.tests.classes;
 
-import com.inolas.classes.StackNode;
 import org.junit.Test;
-import static org.junit.Assert.*;
 
 public class StackNodeTest
 {

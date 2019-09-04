@@ -2,6 +2,15 @@
 Dropbox for my practice codes
 File names with prefix '$' needs to be worked on or have some Follow-up questions
 
+#
+1) Data Structure class files for re-usability -
+https://github.com/Inolas/learn-code/tree/master/src/com/inolas/classes
+
+2) Some solutions of questions from LeetCode.com, Cracking The Coding Interview (CTCI) book, DailyCodingProblem.com, and a couple of common algorithms.
+https://github.com/Inolas/learn-code/tree/master/src/com/inolas/solutions
+
+3) JUnits for classes and solutions -
+https://github.com/Inolas/learn-code/tree/master/src/com/inolas/tests
 
 # Topics started/completed
 

@@ -1,4 +1,4 @@
-package com.inolas.tests.LinkedList;
+package com.inolas.tests.classes;
 
 import com.inolas.classes.LinkedList;
 import com.inolas.classes.ListNode;
