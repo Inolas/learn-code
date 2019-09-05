@@ -20,9 +20,12 @@ public class TreeNode
 
     public TreeNode insertLevelOrder(int[] ints, TreeNode tn, int i)
     {
-        tn = new TreeNode(ints[i]);
-        tn.left = insertLevelOrder(ints, tn.left, 2 * i + 1);
-        tn.right = insertLevelOrder(ints, tn.right, 2 * i + 2);
+        if(ints.length > i)
+        {
+            tn = new TreeNode(ints[i]);
+            tn.left = insertLevelOrder(ints, tn.left, 2 * i + 1);
+            tn.right = insertLevelOrder(ints, tn.right, 2 * i + 2);
+        }
 
         return tn;
     }
@@ -70,7 +73,7 @@ public class TreeNode
                 ;
             if (current.right == null)
                 ;
-            s =;
+//            s =;
             current = current.left;
         }
 
