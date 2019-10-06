@@ -14,8 +14,9 @@ https://github.com/Inolas/learn-code/tree/master/src/com/inolas/tests
 
 # Status of code from [Cracking The Coding Interview](http://www.crackingthecodinginterview.com/ "CTCI")
 
-|2.1|Remove Dups||
+|#|Question Title|Complexity|
 |---|-----------|--|
+|2.1|Remove Dups||
 |2.2|Return Kth to Last||
 |2.3|Delete Middle Node||
 |2.4|Partition||
@@ -23,7 +24,6 @@ https://github.com/Inolas/learn-code/tree/master/src/com/inolas/tests
 ||||
 ||||
 ||||
-
 |3.1|Three In One| |
 |3.2|Stack Min||
 |3.3|Stack of Plates||
