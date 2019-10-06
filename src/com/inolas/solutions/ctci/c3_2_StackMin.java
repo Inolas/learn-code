@@ -10,22 +10,22 @@ import com.inolas.classes.StackNode;
 public class c3_2_StackMin extends StackNode<Integer>
 {
 //    StackNode<Integer> stack = new c3_2_StackMin(item);
-    public int mini = Integer.MAX_VALUE;
-    private c3_2_StackMin(int data){ this.data = data;}
-
-    public void push(){
-        if(item < mini){
-            mini = item;
-        }
-        StackNode<Integer> t = new c3_2_StackMin(item);
-        t.next = top;
-        top = t;
-    }
-    public int getMin(){
-        return min;
-    }
-    public static void StackNodeInt(item){
-
-    }
+//    public int mini = Integer.MAX_VALUE;
+//    private c3_2_StackMin(int data){ this.data = data;}
+//
+//    public void push(){
+//        if(item < mini){
+//            mini = item;
+//        }
+//        StackNode<Integer> t = new c3_2_StackMin(item);
+//        t.next = top;
+//        top = t;
+//    }
+//    public int getMin(){
+//        return min;
+//    }
+//    public static void StackNodeInt(item){
+//
+//    }
 
 }
