@@ -100,8 +100,6 @@ public class TreeNode
 
         return treePreorder;
     }
-
-
 }
 /*
 ......1         spaces(s) = h*2

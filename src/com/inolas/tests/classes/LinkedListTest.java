@@ -32,7 +32,7 @@ public class LinkedListTest
         assertEquals(expectedStr,actualStr);
     }
     @Test
-    public void lengthList(){
+    public void lengthListTest(){
         LinkedList ll = new LinkedList();
         ll.insert(1);       ll.insert(2);
         ll.insert(3);       ll.insert(4);

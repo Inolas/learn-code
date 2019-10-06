@@ -5,12 +5,14 @@ public class StackNode<T>
 {
     private T data;
     private StackNode<T> next;
+    public StackNode(){}
     private StackNode(T data){ this.data = data;}
     private StackNode<T> top;
-    private T min;
 
     public void push(T item){
-
+        StackNode<T> t = new StackNode(item);
+        t.next = top;
+        top = t;
     }
     public T pop(){
         if(top == null) throw new EmptyStackException();
@@ -22,7 +24,11 @@ public class StackNode<T>
         if(top == null) throw new EmptyStackException();
             return top.data;
     }
-    public T getMin(){
-        return min;
+    public boolean isEmpty(StackNode t){ /* return top == null; */
+        if(top == null){
+            return true;
+        }
+        return false;
     }
+
 }

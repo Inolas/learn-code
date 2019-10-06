@@ -11,4 +11,17 @@ public class TreeNodeTest
         TreeNode tn = tree.createTree();
         tree.printSTree(tn);
     }
+
+    @Test
+    public void printPreOrderTest(){
+        TreeNode tn = new TreeNode(1);
+        tn.right = new TreeNode(3);
+        tn.left = new TreeNode(2);
+        //tn.left.right = new TreeNode(5);
+        tn.left.left = new TreeNode(4);
+        tn.right.right = new TreeNode(7);
+        tn.right.left = new TreeNode(6);
+
+        System.out.println(tn.printPreorder(tn));
+    }
 }
