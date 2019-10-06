@@ -2,6 +2,13 @@ package com.inolas.classes;
 
 public class LinkedList{
     public ListNode head;
+    public LinkedList(){}
+    public LinkedList(int[] array){
+        for(int i: array){
+            this.insert(i);
+        }
+
+    }
 
     public void insert(int data){
         ListNode current = head;
@@ -15,6 +22,7 @@ public class LinkedList{
         current.next = new ListNode(data);
 
     }
+
     public void prepend(int data){
 
         ListNode newNode = new ListNode(data);
@@ -40,20 +48,20 @@ public class LinkedList{
     }
     public String stringList()
     {
-        String list="";
+        StringBuilder list = new StringBuilder();
         ListNode current = head;
 
         if(current == null)
-            list = "";
+            list.append("");
 
         while (current.next != null)
         {
-            list += current.data+"->";
+            list.append(current.data+"->");
             current = current.next;
         }
-        list += current.data;
+        list.append(current.data);
 
-        return list;
+        return list.toString();
     }
 
     public ListNode returnListNode()
