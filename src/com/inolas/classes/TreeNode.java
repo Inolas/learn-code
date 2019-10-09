@@ -97,10 +97,11 @@ public class TreeNode
                 s.append(" " + parent.right.toString());
             }
             level++;
-            if(bfsTree.length() > Math.pow(2, level / 2) + 1)
-                s.append("\t");
-            else
+//            if(bfsTree.length() % Math.pow(2, level / 2) + 1)
+            if( (bfsTree.length() & (bfsTree.length() - 1)) == 0)
                 s.append("\n");
+            else
+                s.append("\t");
         }
         return s.toString();
     }
