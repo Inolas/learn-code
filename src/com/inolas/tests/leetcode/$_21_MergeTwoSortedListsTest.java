@@ -3,7 +3,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class _21_MergeTwoSortedListsTest
+public class $_21_MergeTwoSortedListsTest
 {
     @Test
     public void test1(){

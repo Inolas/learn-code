@@ -81,7 +81,7 @@ public class mergeSort
         return strArray;
     }
 
-    public ListNode mergeSort(ListNode head)
+    public ListNode mergeSort(ListNode<Integer> head)
     {
         if(head == null || head.next == null){
             return head;
@@ -116,7 +116,7 @@ public class mergeSort
         return sortedList.next;
     }
 
-    public ListNode merge(ListNode l1, ListNode l2)
+    public ListNode merge(ListNode<Integer> l1, ListNode<Integer> l2)
     {
         ListNode merge = new ListNode(0);
 

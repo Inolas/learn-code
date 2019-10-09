@@ -1,23 +1,26 @@
 package com.inolas.classes;
 
-import sun.reflect.generics.tree.Tree;
-
-import java.util.Queue;
-
 public class TreeNode
 {
     public int val;
     public TreeNode left;
     public TreeNode right;
+    public TreeNode(){}
     public TreeNode(int x) {
         val = x;
     }
+    public StringBuilder s = new StringBuilder();
 
     public TreeNode(int[] ints)
     {
         insertLevelOrder(ints, this, 0);
     }
 
+    /*
+    * ints[] - array of ints to insert in the tree
+    * tn - head of tree node
+    * i - index of the node that will be created
+    * */
     public TreeNode insertLevelOrder(int[] ints, TreeNode tn, int i)
     {
         if(ints.length > i)
@@ -29,19 +32,24 @@ public class TreeNode
 
         return tn;
     }
+
     /*
     * Creates a basic Tree for any example
     * */
     public TreeNode createTree(){
-        TreeNode tn = new TreeNode(1);
-        tn.right = new TreeNode(3);
-        tn.left = new TreeNode(2);
-        tn.left.right = new TreeNode(5);
-        tn.left.left = new TreeNode(4);
-        tn.right.right = new TreeNode(7);
-        tn.right.left = new TreeNode(6);
+        this.val = 1;
+        this.right = new TreeNode(3);
+        this.left = new TreeNode(2);
+        this.left.right = new TreeNode(5);
+        this.left.left = new TreeNode(4);
+        this.right.right = new TreeNode(7);
+        this.right.left = new TreeNode(6);
+        this.left.left.left = new TreeNode(8);
+        this.left.left.right = new TreeNode(9);
+        this.left.right.left = new TreeNode(10);
+        this.left.right.right = new TreeNode(11);
 
-        return tn;
+        return this;
     }
 
     /*
@@ -54,51 +62,67 @@ public class TreeNode
         return this.val+"";
     }
 
+/*    public int length(){
+        int len=0;
+        while (this. != null){
+
+        }
+        return len;
+    }*/
+
     /*
     * Print tree as a tree with /, \, etc.
     * To do this we need to traverse the tree in level order(BFS).
     * */
     public String printSTree(TreeNode root){
-        String s = "str";
-        if(root == null){
-            return "\n";
+        TreeNode parent;
+        int level = 0;
+        if(root == null)
+            return "";
+        Queue<TreeNode> bfsTree = new Queue();
+
+        bfsTree.enqueue(root);
+        s.append(root.toString()+"\n");
+
+        while(bfsTree.front != null){
+            parent = bfsTree.dequeue();
+            if(parent.left != null)
+            {
+                bfsTree.enqueue(parent.left);
+                s.append("" + parent.left.toString());
+            }
+            if(parent.right != null)
+            {
+                bfsTree.enqueue(parent.right);
+                s.append(" " + parent.right.toString());
+            }
+            level++;
+            if(bfsTree.length() > Math.pow(2, level / 2) + 1)
+                s.append("\t");
+            else
+                s.append("\n");
         }
-        TreeNode current = root;
-
-        while(current.left != null || current.right != null){
-
-            if (current.left == null)
-
-
-                ;
-            if (current.right == null)
-                ;
-//            s =;
-            current = current.left;
-        }
-
-        return s;
+        return s.toString();
     }
 
+    /*
+    * print the Tree in PRE ORDER
+    * */
     public String printPreorder(TreeNode root){
 
-        String treePreorder="";
-
         if(root == null)
-            treePreorder += "null";
+            s.append("null");
 
-        System.out.print(root.val);
-        treePreorder += root.val;
-
+//        System.out.print(root.val);
+        s.append(root.val);
         if(root.left != null){
             printPreorder(root.left);
         }
-
         if(root.right != null){
             printPreorder(root.right);
         }
 
-        return treePreorder;
+        return s.toString();
     }
 }
 /*

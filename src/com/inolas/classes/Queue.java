@@ -1,44 +1,69 @@
 package com.inolas.classes;
 
-public class Queue
-{
-    public ListNode head;
-    public ListNode tail;
+import java.util.List;
 
-    public void enqueue(int i)
+public class Queue<T>
+{
+    public ListNode<T> front; //head
+    public ListNode<T> back; //tail
+
+    /*
+    * Enqueue from back
+    * */
+    public void enqueue(T i)
     {
-        ListNode current = head;
-        if (head == null)
+        if (front == null)
         {
-            head = new ListNode(i);
-            tail = head;
+            front = new ListNode(i);
+            back = front;
             return;
         }
-
-        tail.next = new ListNode(i);
-        tail = tail.next;
+        back.next = new ListNode(i);
+        back = back.next;
     }
     /*
-    * Delete a node form the tail.
+    * Delete a node form the front.
     * */
-    public void dequeue(){
-        if(head == null)
+    public T dequeue(){
+        T frontValue;
+        if(front == null)
         {
-            return;
+            back = null;
+            return null;
         }
-        head = head.next;
-        if(head == null)
-        {
-            tail = null;
-        }
+        frontValue = front.data;
+        front = front.next;
+
+        return frontValue;
     }
 
+    public boolean isEmpty(){
+        if(front == null)
+            return true;
+        return false;
+    }
+
+    public int length(){
+        int len = 1;
+        ListNode current = front;
+        if(current == null)
+            return 0;
+        while (current.next != null){
+            current = current.next;
+            len++;
+        }
+        return len;
+    }
+
+    /*
+    *   Test verified
+    * */
     public String printQ(){
         String sQ = "";
-        ListNode current = head;
-        if(head == null)
+        ListNode current = front;
+        if(front == null)
             return null;
-        while (current.next.next != null)
+        while (current.next != null)
         {
             System.out.print(current.data + "->");
             current = current.next;

@@ -7,7 +7,7 @@ public class _bfs
     public void arrayBFS(int array[]){
 
     }
-    public void queueBFS(Queue queue){
+//    public void queueBFS(Queue<T> queue){
 
-    }
+//    }
 }

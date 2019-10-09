@@ -1,9 +1,9 @@
 package com.inolas.classes;
 
-public class ListNode{
-    public int data;
-    public ListNode next;
-    public ListNode(int data){
+public class ListNode<T>{
+    public T data;
+    public ListNode<T> next;
+    public ListNode(T data){
         this.data = data;
     }
 
@@ -25,21 +25,22 @@ public class ListNode{
         }
         return length;
     }
+
     @Override
     public String toString(){
-        String list="";
+        StringBuilder list = new StringBuilder();
         ListNode current = this;
 
         if(current == null)
-            list = "";
+            return list.append("").toString();
 
         while (current.next != null)
         {
-            list += current.data+"->";
+            list.append(current.data+"->");
             current = current.next;
         }
-        list += current.data;
+        list.append(current.data);
 
-        return list;
+        return list.toString();
     }
 }

@@ -4,7 +4,7 @@ import com.inolas.classes.ListNode;
 
 public class c2_5_SumLists
 {
-    public static ListNode sumLists(ListNode l1, ListNode l2){
+    public static ListNode<Integer> sumLists(ListNode<Integer> l1, ListNode<Integer> l2){
         ListNode sumList = new ListNode(0);
         ListNode sum = sumList;
         int carry = 0;

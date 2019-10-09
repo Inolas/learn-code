@@ -7,7 +7,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class mergeSortTest
+public class $mergeSortTest
 {
     @Test
     public void test1(){

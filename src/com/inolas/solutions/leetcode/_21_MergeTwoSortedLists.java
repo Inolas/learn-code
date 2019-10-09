@@ -6,7 +6,7 @@ import com.inolas.classes.ListNode;
 
 class MergeTwoSortedLists extends LinkedList
 {
-    public static ListNode Merge(ListNode l1, ListNode l2){
+    public static ListNode Merge(ListNode<Integer> l1, ListNode<Integer> l2){
         ListNode merged;
         if(l1 == null && l2 == null){
             return null;

@@ -21,7 +21,7 @@ public class c2_2_ReturnKthToLast
         {
             head = head.next;
         }
-        return head.data;
+        return Integer.parseInt(head.data.toString());
     }
 
     public static void main(String[] args)

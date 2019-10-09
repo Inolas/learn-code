@@ -5,11 +5,11 @@ import org.junit.Test;
 
 public class TreeNodeTest
 {
-    TreeNode tree;
+    TreeNode tree = new TreeNode();
     @Test
     public void createTree(){
         TreeNode tn = tree.createTree();
-        tree.printSTree(tn);
+        System.out.println(tree.printSTree(tn));
     }
 
     @Test
@@ -22,6 +22,7 @@ public class TreeNodeTest
         tn.right.right = new TreeNode(7);
         tn.right.left = new TreeNode(6);
 
+//        System.out.println(tn.printSTree(tn));
         System.out.println(tn.printPreorder(tn));
     }
 }

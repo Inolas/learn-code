@@ -12,24 +12,28 @@ https://github.com/Inolas/learn-code/tree/master/src/com/inolas/solutions
 3) JUnits for classes and solutions -
 https://github.com/Inolas/learn-code/tree/master/src/com/inolas/tests
 
-# Status of code from [Cracking The Coding Interview](http://www.crackingthecodinginterview.com/ "CTCI")
+# Status of code from
+##[Cracking The Coding Interview](http://www.crackingthecodinginterview.com/ "CTCI")
 
 |#|Question Title|Complexity|
 |---|-----------|--|
 |2.1|Remove Dups||
 |2.2|Return Kth to Last||
 |2.3|Delete Middle Node||
-|2.4|Partition||
+||Partition||
 |2.5|Sum Lists||
-||||
-||||
-||||
-|3.1|Three In One| |
-|3.2|Stack Min||
+||Palindrome||
+||Intersection||
+||Loop Detection||
+||Three In One| |
+||Stack Min||
 |3.3|Stack of Plates||
-|3.4|Queue in Stacks||
+||Queue in Stacks||
 ||||
-
+|4.2|Minimal Tree||
+|4.3|List of Depths||
+||Check Balanced||
+||Validate BST||
 
 # Topics started/completed
 
