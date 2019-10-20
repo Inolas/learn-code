@@ -1,5 +1,9 @@
 package com.inolas.classes;
 
+/*
+* Methods to be completed: height of the tree, number of elements in the tree
+* */
+
 public class TreeNode
 {
     public int val;
@@ -62,13 +66,16 @@ public class TreeNode
         return this.val+"";
     }
 
-/*    public int length(){
+    /*
+    * Returns the height of the Tree
+    * */
+    public int length(){
         int len=0;
-        while (this. != null){
+        while (this != null){
 
         }
         return len;
-    }*/
+    }
 
     /*
     * Print tree as a tree with /, \, etc.
@@ -97,7 +104,11 @@ public class TreeNode
                 s.append(" " + parent.right.toString());
             }
             level++;
-//            if(bfsTree.length() % Math.pow(2, level / 2) + 1)
+            /*
+            * bitwise operator to check if the number
+            * of elements in the tree is of the power 2.
+            * */
+
             if( (bfsTree.length() & (bfsTree.length() - 1)) == 0)
                 s.append("\n");
             else
