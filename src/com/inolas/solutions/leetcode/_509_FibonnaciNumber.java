@@ -5,6 +5,8 @@ import java.util.Scanner;
 public class _509_FibonnaciNumber
 {
     public static int option = 0;
+    private static Integer[] TD_cache = new Integer[31];
+
     public static int fib(int N){
         if(N < 2)   return N;
         if(option == 1)
@@ -29,6 +31,13 @@ public class _509_FibonnaciNumber
         for(int i=2; i<N+1; i++)
             cache[i] = cache[i-1] + cache[i-2];
         return cache[N];
+    }
+
+    public static int TD_memo(int N){
+        if(TD_cache[N] != null)
+            return TD_cache[N];
+        TD_cache[N] = TD_memo(N-1) + TD_memo(N-2);
+        return TD_memo(N);
     }
 
     public int fib_math(int N){
