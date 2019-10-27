@@ -1,4 +1,8 @@
 package com.inolas.solutions.InterviewAssesments;
+
+import java.util.HashSet;
+import java.util.Set;
+
 /*
 * Count numbers in range such that digits in it and it’s product with q are unequal
 * Given a range of numbers [l, r] and an integer q.
@@ -17,5 +21,37 @@ package com.inolas.solutions.InterviewAssesments;
 * */
 public class NoSameDigitsInProduct
 {
+    public int count(int l, int r, int q){
+        int count=0;
+        Integer product;
+        Set<Character> product_set = new HashSet<>();
 
+        for (int i = l; i <= r ; i++)
+        {
+            int flag=0;
+            product_set.clear();
+            product = i * q;
+            Integer ii = i;
+            String sb_l = ii.toString();
+//            StringBuilder sb_l = new StringBuilder(i.);
+            int len = product.toString().length();
+
+            for(int p = 0; p < len; p++)
+                product_set.add(product.toString().charAt(p));
+
+            for (int j = 0; j < sb_l.length(); j++)
+            {
+                char c = sb_l.charAt(j);
+                if(product_set.contains(c))
+                {
+                   flag = 1;
+                   continue;
+                }
+            }
+            if(flag!=1)
+                count++;
+
+        }
+        return count;
+    }
 }
