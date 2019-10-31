@@ -1,4 +1,4 @@
-package com.inolas.solutions.InterviewAssesments;
+package com.inolas.solutions.interview_assesments;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -50,7 +50,6 @@ public class NoSameDigitsInProduct
             }
             if(flag!=1)
                 count++;
-
         }
         return count;
     }

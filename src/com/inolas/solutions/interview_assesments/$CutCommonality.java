@@ -1,10 +1,8 @@
-package com.inolas.solutions.InterviewAssesments;
+package com.inolas.solutions.interview_assesments;
 
 import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Set;
 
-public class CutCommonality
+public class $CutCommonality
 {
     public int max_cut_commonality(String str){
 

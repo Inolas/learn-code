@@ -1,13 +1,12 @@
-package com.inolas.solutions.InterviewAssesments.GoldmanSachs;
-
-import sun.plugin.javascript.navig.LinkArray;
+package com.inolas.solutions.interview_assesments.GoldmanSachs.Oct272019;
 
 import java.util.*;
 
-public class aStrangeSortingProblem
+public class $aStrangeSortingProblem
 {
     public static List<String> strangeSort(List<Integer> mapping, List<String> nums) {
         // Write your code here
+        Set<String> result = new HashSet<>();
         HashMap<String, Integer> mapped_values = new HashMap<>();
 
         for (String s : nums)
@@ -29,7 +28,7 @@ public class aStrangeSortingProblem
             Map.Entry mapp = (Map.Entry)iterator2.next();
 //            System.out.print(me2.getKey() + ": ");
 //            System.out.println(me2.getValue());
-            result.add(mapp.getKey());
+//            result.add(mapp.getKey());
 
         }
 

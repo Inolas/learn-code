@@ -3,6 +3,7 @@ package com.inolas.classes;
 public class LinkedList{
     public ListNode head;
     public LinkedList(){}
+
     public LinkedList(int[] array){
         for(int i: array){
             this.insert(i);

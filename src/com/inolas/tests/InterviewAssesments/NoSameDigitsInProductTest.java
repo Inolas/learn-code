@@ -1,6 +1,6 @@
 package com.inolas.tests.InterviewAssesments;
 
-import com.inolas.solutions.InterviewAssesments.NoSameDigitsInProduct;
+import com.inolas.solutions.interview_assesments.NoSameDigitsInProduct;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

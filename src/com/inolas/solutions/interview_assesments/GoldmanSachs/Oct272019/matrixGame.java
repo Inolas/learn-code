@@ -1,4 +1,4 @@
-package com.inolas.solutions.InterviewAssesments.GoldmanSachs;
+package com.inolas.solutions.interview_assesments.GoldmanSachs.Oct272019;
 
 import java.util.*;
 

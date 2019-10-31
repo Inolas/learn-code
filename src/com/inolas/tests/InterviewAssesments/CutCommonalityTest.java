@@ -1,13 +1,13 @@
 package com.inolas.tests.InterviewAssesments;
 
-import com.inolas.solutions.InterviewAssesments.CutCommonality;
+import com.inolas.solutions.interview_assesments.$CutCommonality;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
 
 public class CutCommonalityTest
 {
-    CutCommonality mcc = new CutCommonality();
+    $CutCommonality mcc = new $CutCommonality();
 
     @Test
     public void test1(){
