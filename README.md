@@ -1,8 +1,9 @@
-# learn-code
 Dropbox for my practice codes
+
+# learn-code
 File names with prefix '$' needs to be worked on or have some Follow-up questions
 
-#What's in this repository
+# What's in this repository
 1) Data Structure class files for re-usability -
 https://github.com/Inolas/learn-code/tree/master/src/com/inolas/classes
 
@@ -12,8 +13,8 @@ https://github.com/Inolas/learn-code/tree/master/src/com/inolas/solutions
 3) JUnits for classes and solutions -
 https://github.com/Inolas/learn-code/tree/master/src/com/inolas/tests
 
-# Status of code from
-##[Cracking The Coding Interview](http://www.crackingthecodinginterview.com/ "CTCI")
+# Pragram Status
+## [Cracking The Coding Interview](http://www.crackingthecodinginterview.com/ "CTCI")
 
 |#|Question Title|Complexity|
 |---|-----------|--|
@@ -34,6 +35,23 @@ https://github.com/Inolas/learn-code/tree/master/src/com/inolas/tests
 |4.3|List of Depths||
 ||Check Balanced||
 ||Validate BST||
+
+## Other coding problems
+
+|#|Question Title|Complexity|
+|---|-----------|--|
+|1|A matrix game|O(m^2)|
+|2|Grid Game||
+|3|A strange soring problem ||
+|4|No Same Digits in Product||
+|5|Share Purchases||
+|6|Cut Commonality||
+|7|Watering plants||
+|8|Dominos||
+|9|||
+|10|||
+
+
 
 # Topics started/completed
 
