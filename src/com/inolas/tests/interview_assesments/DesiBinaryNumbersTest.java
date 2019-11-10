@@ -16,5 +16,9 @@ public class DesiBinaryNumbersTest
     public void test2(){
         dbn.solve(21);
     }
+    @Test
+    public void test3(){
+        dbn.solve(102);
+    }
 
 }

@@ -12,7 +12,7 @@ public class _1181_beforeAndAfterPuzzlesTest
     _1181_beforeAndAfterPuzzles baap = new _1181_beforeAndAfterPuzzles();
     @Test
     public void test1(){
-        baap.before_after_puzzles(Arrays.asList("writing code", "code rocks"));
+        baap.before_after_puzzles(Arrays.asList("writing code", "code rocks", "code code"));
     }
     @Test
     public void test2(){

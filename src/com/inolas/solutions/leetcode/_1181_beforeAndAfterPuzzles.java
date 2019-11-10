@@ -19,6 +19,7 @@ public class _1181_beforeAndAfterPuzzles
             String last_word = phrase_array[phrase_array.length-1];
             i++;
 
+            if(phrase.length() > 1){
             result_list = phrases.stream()
                     .filter(s -> s.startsWith(last_word))
                     .filter(s -> s.indexOf(" ") > 0)
@@ -26,11 +27,18 @@ public class _1181_beforeAndAfterPuzzles
                     .filter(s -> s != null)
                     .collect(Collectors.toList());
 
-//            result = result_list.stream()
-//                    .flatMap(s .stream())
-//            .collect(Collectors.toList());
-//
             result_list.forEach(str -> result.add(str));
+            }
+            else{
+                result_list = phrases.stream()
+                        .filter(s -> s.equals(last_word))
+//                        .filter(s -> s.indexOf(" ") < 0)
+                        .map(s -> s = phrase)
+//                        .filter(s -> s != null)
+                        .collect(Collectors.toList());
+
+                result_list.forEach(str -> result.add(str));
+            }
 
         }
         Collections.sort(result);
