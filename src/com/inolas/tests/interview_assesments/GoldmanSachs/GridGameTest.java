@@ -1,4 +1,4 @@
-package com.inolas.tests.InterviewAssesments.GoldmanSachs;
+package com.inolas.tests.interview_assesments.GoldmanSachs;
 
 import org.junit.Test;
 

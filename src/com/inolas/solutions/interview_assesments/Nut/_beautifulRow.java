@@ -1,6 +1,6 @@
-package com.inolas.solutions.interview_assesments;
+package com.inolas.solutions.interview_assesments.Nut;
 
-public class _BeautifulRow
+public class _beautifulRow
 {
     int rowLength;
     int count = 0;

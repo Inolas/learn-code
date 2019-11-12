@@ -1,8 +1,8 @@
-package com.inolas.solutions.interview_assesments;
+package com.inolas.solutions.interview_assesments.Nut;
 
 import java.util.*;
 
-public class DesiBinaryNumbers
+public class _desiBinaryNumbers
 {
     public void solve(int n)
     {

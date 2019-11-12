@@ -12,13 +12,13 @@ class MergeTwoSortedLists extends LinkedList
             return null;
         }
         else if(l1 == null || l2 == null){
-            System.out.print(l1 == null? l2.data : l1.data);
+            //System.out.print(l1 == null? l2.data : l1.data);
             return l1 == null ? l2 : l1;
         }
         if(l1.data < l2.data){
             merged = l1;
             l1 = l1.next;
-//            System.out.print("l1:"+l1.data);
+            //System.out.print("l1:"+l1.data);
         }
         else{
             merged = l2;

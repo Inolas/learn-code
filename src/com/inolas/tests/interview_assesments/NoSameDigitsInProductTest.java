@@ -1,4 +1,4 @@
-package com.inolas.tests.InterviewAssesments;
+package com.inolas.tests.interview_assesments;
 
 import com.inolas.solutions.interview_assesments.NoSameDigitsInProduct;
 import org.junit.Test;
