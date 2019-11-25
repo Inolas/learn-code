@@ -1,4 +1,4 @@
-package com.inolas.solutions.practice_problems.GS.Oct272019;
+package com.inolas.solutions.practice_problems.sg.Oct272019;
 
 import java.util.*;
 

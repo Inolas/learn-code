@@ -1,6 +1,6 @@
 package com.inolas.tests.practice_problems.Nut;
 
-import com.inolas.solutions.practice_problems.Nut._desiBinaryNumbers;
+import com.inolas.solutions.practice_problems.xtn._desiBinaryNumbers;
 import org.junit.Test;
 
 public class _desiBinaryNumbersTest

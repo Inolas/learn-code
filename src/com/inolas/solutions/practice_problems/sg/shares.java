@@ -1,4 +1,4 @@
-package com.inolas.solutions.practice_problems.GS;
+package com.inolas.solutions.practice_problems.sg;
 
 import java.util.HashSet;
 import java.util.Set;

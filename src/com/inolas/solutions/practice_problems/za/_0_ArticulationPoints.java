@@ -1,4 +1,4 @@
-package com.inolas.solutions.practice_problems.Az;
+package com.inolas.solutions.practice_problems.za;
 
 import java.util.*;
 

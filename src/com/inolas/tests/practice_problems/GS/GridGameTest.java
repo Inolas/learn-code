@@ -5,7 +5,7 @@ import org.junit.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.inolas.solutions.practice_problems.GS.GridGame.gridGame;
+import static com.inolas.solutions.practice_problems.sg.GridGame.gridGame;
 
 public class GridGameTest
 {

@@ -1,6 +1,6 @@
 package com.inolas.tests.practice_problems.Nut;
 
-import com.inolas.solutions.practice_problems.Nut._beautifulRow;
+import com.inolas.solutions.practice_problems.xtn._beautifulRow;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

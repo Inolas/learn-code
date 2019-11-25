@@ -1,4 +1,4 @@
-package com.inolas.solutions.practice_problems;
+package com.inolas.solutions.practice_problems.sg;
 
 public class lastandsecondlast
 {

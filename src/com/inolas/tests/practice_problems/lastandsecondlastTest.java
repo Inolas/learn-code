@@ -1,6 +1,6 @@
 package com.inolas.tests.practice_problems;
 
-import com.inolas.solutions.practice_problems.lastandsecondlast;
+import com.inolas.solutions.practice_problems.sg.lastandsecondlast;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

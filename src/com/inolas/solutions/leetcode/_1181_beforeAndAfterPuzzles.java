@@ -1,5 +1,6 @@
 package com.inolas.solutions.leetcode;
 //JUnit Tests-https://github.com/Inolas/learn-code/blob/master/src/com/inolas/tests/leetcode/_1181_beforeAndAfterPuzzlesTest.java
+// #streams
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -8,7 +9,7 @@ import java.util.stream.Collectors;
 public class _1181_beforeAndAfterPuzzles
 {
     public List<String> beforeAfterPuzzles(List<String> phrases){
-        List<String> resultList = new ArrayList<>();
+        List<String> resultList;
         List<String> result = new ArrayList<>();
 
         int i = 0;

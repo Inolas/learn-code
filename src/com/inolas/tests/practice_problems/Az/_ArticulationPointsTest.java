@@ -1,6 +1,6 @@
 package com.inolas.tests.practice_problems.Az;
 
-import com.inolas.solutions.practice_problems.Az._0_ArticulationPoints;
+import com.inolas.solutions.practice_problems.za._0_ArticulationPoints;
 import org.junit.Test;
 
 public class _ArticulationPointsTest

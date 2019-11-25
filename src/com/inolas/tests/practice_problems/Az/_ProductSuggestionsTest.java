@@ -1,6 +1,6 @@
 package com.inolas.tests.practice_problems.Az;
 
-import com.inolas.solutions.practice_problems.Az._0_ProductSuggestions;
+import com.inolas.solutions.practice_problems.za._0_ProductSuggestions;
 import org.junit.Test;
 
 public class _ProductSuggestionsTest

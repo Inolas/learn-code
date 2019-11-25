@@ -1,4 +1,4 @@
-package com.inolas.solutions.practice_problems.Nut;
+package com.inolas.solutions.practice_problems.xtn;
 
 import java.util.Collections;
 import java.util.HashMap;
