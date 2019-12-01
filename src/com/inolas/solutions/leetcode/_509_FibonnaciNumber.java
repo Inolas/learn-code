@@ -2,7 +2,7 @@ package com.inolas.solutions.leetcode;
 
 import java.util.Scanner;
 
-public class _509_FibonnaciNumber
+public class  _509_FibonnaciNumber
 {
     public static int option = 0;
     private static Integer[] TD_cache = new Integer[31];
