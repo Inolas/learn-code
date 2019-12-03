@@ -45,5 +45,9 @@ public class LinkedListTest
 
         assertEquals(expected,actual);
     }
-
+    @Test
+    public void createRandomListTest(){
+        LinkedList ll = new LinkedList(10);
+        System.out.println(ll.stringList());
+    }
 }

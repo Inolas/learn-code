@@ -1,5 +1,7 @@
 package com.inolas.classes;
 
+import java.util.Random;
+
 public class LinkedList{
     public ListNode head;
     public LinkedList(){}
@@ -9,6 +11,16 @@ public class LinkedList{
             this.insert(i);
         }
 
+    }
+
+    //Creates a linked list of length count, with random number ranging 0 to 10.
+    public LinkedList(int count){
+        Random random = new Random();
+        for (int i = 0; i < count; i++)
+        {
+            int randomNumber = random.nextInt(100);
+            this.insert(randomNumber%10);
+        }
     }
 
     public void insert(int data){
@@ -78,4 +90,14 @@ public class LinkedList{
         }
         return current;
     }
+
+/*    public LinkedList createRandomList(int count){
+        Random random = new Random();
+        for (int i = 0; i < count; i++)
+        {
+            int randomNumber = random.nextInt(10);
+            this.insert(randomNumber);
+        }
+        return this;
+    }*/
 }
