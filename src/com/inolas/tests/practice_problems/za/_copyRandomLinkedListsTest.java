@@ -15,6 +15,6 @@ public class _copyRandomLinkedListsTest
         _ALNode node2 = new _ALNode(2, node3);
         _ALNode alNode = new _ALNode(1, node2, node3);
 
-        System.out.println(alNode.print(alNode.deepCopy(alNode)));
+        System.out.println((alNode.deepCopy(alNode).toString()));
     }
 }

@@ -32,37 +32,40 @@ public class _ALNode{
         this.next = next;
         this.random = random;
     }
-    public String print(_ALNode head){
+    @Override
+    public String toString(){
+        _ALNode current = this;
+
         StringBuilder sb = new StringBuilder();
         String nextStr="", randStr="";
 
         sb.append("head || next || random\n");
-        while(head != null){
-            nextStr = head.next == null ? "null" : Integer.toString(head.next.val);
-            randStr = head.random == null ? "null" : Integer.toString(head.random.val);
+        while(current != null){
+            nextStr = current.next == null ? "null" : Integer.toString(current.next.val);
+            randStr = current.random == null ? "null" : Integer.toString(current.random.val);
 
-            sb.append(head.val+" || "+ nextStr +" || "+ randStr+"\n");
-            head = head.next;
+            sb.append(current.val+" || "+ nextStr +" || "+ randStr+"\n");
+            current = current.next;
         }
         return sb.toString();
     }
-        HashMap<_ALNode, _ALNode> visited = new HashMap<>();
-        public _ALNode deepCopy(_ALNode head){
-            _ALNode node;
-            if(head == null){
-              return null;
-            }
 
-            if(visited.containsKey(head)){
-               return head;
-            }
-            node = new _ALNode(head.val);
-            visited.put(head, node);
-
-            node.next = deepCopy(head.next);
-            node.random = deepCopy(head.random);
-
-          return node;
+    HashMap<_ALNode, _ALNode> visited = new HashMap<>();
+    public _ALNode deepCopy(_ALNode head){
+        _ALNode node;
+        if(head == null){
+          return null;
         }
 
+        if(visited.containsKey(head)){ // return copied node not original node
+           return visited.get(head);
+        }
+        node = new _ALNode(head.val);
+        visited.put(head, node);
+
+        node.next = deepCopy(head.next);
+        node.random = deepCopy(head.random);
+
+      return node;
     }
+}
