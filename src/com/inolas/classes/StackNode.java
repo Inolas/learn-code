@@ -24,8 +24,8 @@ public class StackNode<T>
         if(top == null) throw new EmptyStackException();
             return top.data;
     }
-    public boolean isEmpty(StackNode t){ /* return top == null; */
-        if(top == null){
+    public boolean isEmpty(){ /* return top == null; */
+        if(this.top == null){
             return true;
         }
         return false;
