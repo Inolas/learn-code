@@ -6,7 +6,7 @@ import java.util.Arrays;
 
 public class _dfs
 {
-    public static void DFStraversal(int[][] graph){
+    public static int[] DFStraversal(int[][] graph){
         StackNode<Integer> stack = new StackNode<>();
 //        boolean[] visited = new boolean[graph.length];
         int[] visited = new int[graph.length];
@@ -32,14 +32,14 @@ public class _dfs
                 stack.pop();
             }
         }
-        System.out.println(visited);
+        return visited;
     }
 
     public static void main(String[] args)
     {
         int[][] graph = {{0,1,0,1,1},{0,0,1,0,0},{0,0,0,1,0},{0,0,0,0,0},{0,0,0,1,0}};
         int[][] graph1 = {{0,1,1,0},{0,0,1,0},{1,0,0,1},{0,0,0,1}};
-        DFStraversal(graph1);
+        int[] visited = DFStraversal(graph1);
 
     }
 }
