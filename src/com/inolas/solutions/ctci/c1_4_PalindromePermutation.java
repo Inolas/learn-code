@@ -1,7 +1,9 @@
 package com.inolas.solutions.ctci;
 
 import java.util.HashMap;
-
+/*
+*
+* */
 public class c1_4_PalindromePermutation
 {
     public boolean isPermutOfPalind(String input)
@@ -34,6 +36,6 @@ public class c1_4_PalindromePermutation
                 oddCount++;
             }
         }
-        return oddCount % 2 == 0 ? false : true;
+        return oddCount > 1 ? false : true;
     }
 }

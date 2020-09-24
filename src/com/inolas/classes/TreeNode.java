@@ -11,7 +11,10 @@ public class TreeNode
     public TreeNode right;
     public TreeNode(){}
     public TreeNode(int x) {
-        val = x;
+        val = x; left = null; right = null;
+    }
+    public TreeNode(int x, TreeNode nodeLeft, TreeNode nodeRight){
+        val = x; left = nodeLeft; right = nodeRight;
     }
     public StringBuilder s = new StringBuilder();
 
