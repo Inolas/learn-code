@@ -6,7 +6,7 @@ public class StackNode<T>
     private T data;
     private StackNode<T> next;
     public StackNode(){}
-    private StackNode(T data){ this.data = data;}
+    private StackNode(T data){ this.data = data; }
     private StackNode<T> top;
 
     public void push(T item){

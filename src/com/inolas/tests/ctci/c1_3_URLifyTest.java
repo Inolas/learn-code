@@ -6,6 +6,10 @@ import static org.junit.Assert.*;
 public class c1_3_URLifyTest
 {
     c1_3_URLify U = new c1_3_URLify();
+    public void setU(c1_3_URLify u)
+    {
+//        U = u;
+    }
     @Test
     public void test1(){
         String actual = U.urlify("Mr John SMith     ", 13);
