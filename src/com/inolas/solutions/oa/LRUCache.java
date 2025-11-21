@@ -48,16 +48,16 @@ public class LRUCache
         return cache.toString();
     }
 
-  public static void main(String[] args) {
-    LRUCache cache = new LRUCache();
-    System.out.println(cache.put("1", "A"));
-    System.out.println(cache.put("2", "B"));
-    System.out.println(cache.get("1"));
-    System.out.println(cache.put("3", "C"));
-    System.out.println(cache.put("4", "D"));
-    System.out.println(cache.put("5", "E"));
-    System.out.println(cache.get("1"));
-    System.out.println(cache.put("6", "F"));
-    System.out.println(printCache());
-  }
+    public static void main(String[] args) {
+        LRUCache cache = new LRUCache();
+        System.out.println(cache.put("1", "A"));
+        System.out.println(cache.put("2", "B"));
+        System.out.println(cache.get("1"));
+        System.out.println(cache.put("3", "C"));
+        System.out.println(cache.put("4", "D"));
+        System.out.println(cache.put("5", "E"));
+        System.out.println(cache.get("1"));
+        System.out.println(cache.put("6", "F"));
+        System.out.println(printCache());
+    }
 }
