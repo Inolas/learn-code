@@ -3,7 +3,8 @@ package com.inolas.solutions.algorithms;
 public class _kadanesAlgo
 {
     /*
-    * Try using for each loop
+    * Try using for each loop;
+    *  largest sub array
     * */
     public static int kadanesAlgorithm(int[] array)
     {

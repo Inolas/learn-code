@@ -6,9 +6,10 @@ import java.util.HashMap;
 * */
 public class c1_4_PalindromePermutation
 {
-    public boolean isPermutOfPalind(String input)
+    public boolean isPermutOfPalind(String inputString)
     {
         int oddCount = 0;
+        String input = inputString.replaceAll("[@$#%:;.,]", "");
         char[] inputArray = input.toCharArray();
         HashMap<Character, Integer> wordCount = new HashMap<Character, Integer>();
         for (char i: inputArray)
@@ -20,7 +21,6 @@ public class c1_4_PalindromePermutation
                 {
                     int charCount = wordCount.get(i);
                     wordCount.replace(i, ++charCount);
-
                 } else
                 {
                     wordCount.put(i, 1);
